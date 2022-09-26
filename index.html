@@ -1,0 +1,27 @@
+<html>
+    <title>familia</title>
+    <head><title>familia</title></head>
+    <body>
+        <h1>meu album de familia</h1>
+        <img src="pai.jpg" style="width:30%;" id="image">
+        <h4 id="lg">jose silva</h4>
+        <button onclick="update()">proxmo</button>
+        <script>
+            var images=["pai.jpg","mae.webp","brod.png","v.jfif"];
+            var nomes=["jose silva","luciane silva","gabriel e daiane silva","dalva silva"];
+            var i =0;
+            function update(){
+                i++;
+                var numerofamili=3;
+                if (i>numerofamili){
+                    i=0
+                }
+                var upimg=images[i]
+                var upnm=nomes[i]
+                document.getElementById("image").src=upimg;
+                document.getElementById("lg").innerHTML=upnm;
+            }
+        </script>
+        
+    </body>
+</html>
